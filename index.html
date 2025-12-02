@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKB</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="efek1.css">
+    <link rel="stylesheet" href="efek2.css">
+
+    <style>
+        /* FIX RESPONSIVE NAVBAR */
+        #mainNavbar {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .navbar-toggler {
+            border-color: white;
+        }
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
+
+        /* HERO */
+        .hero-section {
+            position: relative;
+            background-image: url('kelas.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+        }
+
+        /* RESPONSIVE CARD IMAGE */
+        .card-img-top-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* SOCIAL FLOAT */
+        .social-float {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            z-index: 999;
+        }
+        .social-icon {
+            display: block;
+            margin: 10px 0;
+            font-size: 28px;
+            color: white;
+            background: #c13584;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* FIX GRID BERANTAKAN DI HP */
+        @media (max-width: 768px) {
+            .featurette {
+                text-align: center;
+            }
+            .featurette img {
+                max-width: 80%;
+                margin-bottom: 15px;
+            }
+            .card {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            .card-body {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" id="mainNavbar">
+    <div class="container-fluid mx-md-5">
+        
+        <a class="navbar-brand text-white fw-bold" href="#beranda">PKB</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!-- BERANDA -->
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="#beranda">Beranda</a>
+                </li>
+
+                <!-- MENU KELOMPOK 1–10 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="kelompokDropdown"
+                        role="button" data-bs-toggle="dropdown">
+                        Kelompok
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="fileklp1.html">Kelompok 1</a></li>
+                        <li><a class="dropdown-item" href="detail-berita-2.html">Kelompok 2</a></li>
+                        <li><a class="dropdown-item" href="detail-berita-3.html">Kelompok 3</a></li>
+                        <li><a class="dropdown-item" href="fileklp1.html">Kelompok 4</a></li>
+                        <li><a class="dropdown-item" href="detail-berita-2.html">Kelompok 5</a></li>
+                        <li><a class="dropdown-item" href="tim6.html">Kelompok 6</a></li>
+                        <li><a class="dropdown-item" href="fileklp1.html">Kelompok 7</a></li>
+                        <li><a class="dropdown-item" href="detail-berita-2.html">Kelompok 8</a></li>
+                        <li><a class="dropdown-item" href="tim9.html">Kelompok 9</a></li>
+                        <li><a class="dropdown-item" href="fileklp1.html">Kelompok 10</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- TEORI -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#sejarah">Teori</a>
+                </li>
+
+                <!-- HASIL PENGAMATAN -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#berita">Hasil</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+    
+
+    <!-- HERO -->
+    <header class="hero-section text-white" id="beranda">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-duration="1000">
+                INTERAKSI DAN BIODIVERSITAS
+            </h1>
+            <p class="lead col-lg-8 mx-auto" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                PRAKTIKUM BIOLOGI SEMESTER 123
+            </p>
+        </div>
+    </header>
+
+    <!-- SOCIAL FLOAT -->
+    <div class="social-float d-none d-md-block">
+        <a href="https://www.instagram.com/pkb_40?igsh=d2hrNGIzcTl0Y3dl" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+   <!-- SEJARAH -->
+<main class="container py-5" id="sejarah">
+    <div class="row featurette align-items-center">
+
+      <div class="col-md-5 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+    <div class="card shadow-sm border-0">
+        <img src=".jpg" class="img-fluid rounded-3"
+             style="max-width: 85%; height: auto;" alt="gambar">
+    </div>
+</div>
+
+<div class="col-md-7 mt-4 mt-md-0 d-flex flex-column justify-content-center"
+     data-aos="fade-left" data-aos-duration="1000"
+     style="text-align: center;">
+     
+    <h2 class="featurette-heading mb-3">Teori</h2>
+
+    <!-- TEORI SINGKAT -->
+    <p class="text-muted px-3" style="font-size: 15px;">
+        Interaksi antar­makhluk hidup dalam sebuah ekosistem memainkan peran krusial dalam membentuk struktur komunitas, dinamika populasi, dan keanekaragaman hayati. Terdapat beberapa jenis interaksi utama, yaitu .......
+    </p>
+
+    <!-- TOMBOL LIHAT -->
+    <a href="teori.html" 
+       class="btn btn-primary px-4 py-2 mx-auto"
+       style="border-radius: 10px; width: 140px;">
+       Selengkapnya
+    </a>
+</div>
+
+
+    </div>
+</main>
+
+
+    <!-- BERITA -->
+    <section class="container py-5" id="berita">
+
+        <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">
+            HASIL PENGAMATAN
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto1.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 1</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file1.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto2.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 2</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file2.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto3.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 3</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file3.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto4.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 4</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file4.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto5.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 5</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file5.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto6.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 6</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="tim6.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto7.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 7</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file7.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto8.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 8</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file8.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto9.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 9</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file9.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 10 -->
+            <div class="col-md-4 mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card h-100 shadow-sm custom-card">
+                    <div class="card-img-top-container">
+                        <img src="foto10.jpg" class="card-img-top" alt="gambar">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kelompok 10</h5>
+                        <p class="card-text text-muted flex-grow-1">Hasil Pengamatan</p>
+                        <a href="file9.html" class="btn btn-warning mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <script>
+        AOS.init({ once: true });
+    </script>
+
+</body>
+</html>
