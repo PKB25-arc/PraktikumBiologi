@@ -1,0 +1,49 @@
+/* NEON EFFECT */
+.neon-text {
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff,
+                 0 0 10px #00eaff,
+                 0 0 20px #00eaff,
+                 0 0 40px #0088ff,
+                 0 0 80px #005eff;
+    letter-spacing: 2px;
+}
+
+/* ANIMASI PER KATA SLIDE KESAMPING */
+.slide-words {
+    opacity: 0;
+    animation: slideWords 1.8s ease-out forwards;
+}
+
+@keyframes slideWords {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* TEKS SUBJUDUL EFEK AWAN */
+.cloud-text {
+    color: #a8fffe;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6),
+                 0 0 20px rgba(173,255,255,0.4),
+                 0 0 40px rgba(132,217,255,0.3);
+    animation: cloudMove 6s ease-in-out infinite alternate;
+}
+
+@keyframes cloudMove {
+    0% {
+        text-shadow: 0 0 10px rgba(255,255,255,0.5),
+                     10px 10px 40px rgba(173,255,255,0.4);
+        opacity: 0.8;
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(255,255,255,0.7),
+                     -10px -10px 60px rgba(173,255,255,0.5);
+        opacity: 1;
+    }
+}
